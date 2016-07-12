@@ -1,7 +1,7 @@
 FROM phusion/baseimage:latest
 MAINTAINER Stefan Siegl <stesie@brokenpipe.de>
 
-RUN apt-get update
+RUN apt-get upgrade
 RUN apt-get -y install git subversion make g++ python curl php5-dev chrpath && apt-get clean
 
 # depot tools
